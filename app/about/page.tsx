@@ -4,6 +4,41 @@ import AboutCards from "@/sections/AboutCards";
 import HeroAbout from "@/sections/HeroAbout";
 import Marquee from "@/sections/Marquee";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About NetInterop Corp | IT Consulting & Team Expertise",
+  description:
+    "Learn about NetInterop Corp, our leadership team, and 25+ years of experience delivering scalable IT consulting and business solutions.",
+
+  keywords: [
+    "about NetInterop",
+    "IT consulting company",
+    "business technology solutions",
+    "enterprise IT services",
+    "team scaling experts",
+  ],
+
+  alternates: {
+    canonical: "/about",
+  },
+
+  openGraph: {
+    title: "About NetInterop Corp | Leadership & IT Expertise",
+    description:
+      "Meet the team behind NetInterop and explore our 25+ years of experience in IT consulting and business solutions.",
+    url: "/about",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 400,
+        height: 400,
+        alt: "NetInterop About Page",
+      },
+    ],
+  },
+};
+
 const page = () => {
   return (
     <section

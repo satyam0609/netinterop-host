@@ -3,7 +3,48 @@ import Support from "@/components/Support";
 import { supportSvgData } from "@/constant/data";
 import ContactBanner from "@/sections/ContactBanner";
 import ContactInfo from "@/sections/ContactInfo";
-import React from "react";
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact NetInterop Corp | Get IT Support & консультаion",
+  description:
+    "Contact NetInterop Corp for expert IT consulting, support, and business solutions. Reach our team via email, phone, or support form.",
+
+  keywords: [
+    "contact NetInterop",
+    "IT support contact",
+    "business IT consulting contact",
+    "technical support services",
+    "NetInterop help",
+  ],
+
+  alternates: {
+    canonical: "/contact",
+  },
+
+  openGraph: {
+    title: "Contact NetInterop Corp | IT Support & Consulting",
+    description:
+      "Get in touch with NetInterop Corp for IT solutions, expert consulting, and dedicated support.",
+    url: "/contact",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 400,
+        height: 400,
+        alt: "Contact NetInterop Corp",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact NetInterop Corp",
+    description: "Reach out to NetInterop for IT solutions and support.",
+    images: ["/og-contact.png"],
+  },
+};
 
 const page = () => {
   return (

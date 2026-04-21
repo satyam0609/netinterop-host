@@ -9,6 +9,59 @@ import ServiceBanner from "@/sections/ServiceBanner";
 import ServiceCard from "@/sections/ServiceCards";
 import ServiceSvgs from "@/sections/ServiceSvgs";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "IT Services & Solutions | NetInterop Corp",
+  description:
+    "Explore NetInterop Corp's comprehensive IT services including unified communications, business messaging, security solutions, and enterprise IT consulting.",
+
+  keywords: [
+    "IT services",
+    "business IT solutions",
+    "unified communications",
+    "enterprise messaging platform",
+    "cybersecurity solutions",
+    "IT consulting services",
+    "business communication tools",
+    "NetInterop services",
+  ],
+
+  alternates: {
+    canonical: "/services",
+  },
+
+  openGraph: {
+    title: "NetInterop Services | IT Solutions for Modern Businesses",
+    description:
+      "Discover powerful IT services including communication, messaging, and security solutions to scale your business.",
+    url: "/services",
+    siteName: "NetInterop Corp",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 400,
+        height: 400,
+        alt: "NetInterop IT Services",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "IT Services by NetInterop Corp",
+    description: "Scale your business with advanced IT services and solutions.",
+    images: ["/og-image.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
 const page = () => {
   return (
     <section id="servicePage" className="mt-20 mb-40 ">
