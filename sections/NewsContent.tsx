@@ -40,7 +40,7 @@ const NewsContent = () => {
           <FadeIn>
             <p className="sm:text-2xl text-xl text-tertiary leading-[180%] my-2">
               In total,{" "}
-              <span className="text-primary">267.140,436 records</span> were
+              <span className="text-primary">267,140,436 records</span> were
               found exposed.
             </p>
           </FadeIn>
