@@ -23,11 +23,10 @@ const Footer = () => {
         <div className="bg-primary rounded-lg p-10 lg:p-16 flex flex-col items-center justify-between shadow-2xl">
           <div className="mb-8 text-center">
             <h2 className="text-3xl md:text-5xl font-medium text-main leading-[140%]">
-              Start work new things
-              <br className="hidden md:block" />& build your Project today
+              Build smarter, launch faster
             </h2>
             <p className="text-main/80 mt-4 text-lg">
-              Build your next project fast & easy
+              Turn your ideas into powerful projects today
             </p>
           </div>
 

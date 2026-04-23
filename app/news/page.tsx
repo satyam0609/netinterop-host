@@ -62,7 +62,7 @@ export const metadata = {
 
 const page = () => {
   return (
-    <section id="newsPage" className="mt-20 mb-40">
+    <section id="newsPage" className="mt-28 mb-40">
       <NewsBanner />
       <main className="px-6 md:px-20 lg:px-25 max-w-360 mx-auto">
         <NewsContent />

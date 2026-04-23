@@ -64,7 +64,7 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <section id="servicePage" className="mt-20 mb-40 ">
+    <section id="servicePage" className="mt-28 mb-40 ">
       <ServiceBanner />
 
       <main className="px-6 md:px-20 lg:px-25 max-w-360 mx-auto">
@@ -120,11 +120,7 @@ const page = () => {
             <div className="flex flex-col gap-10 sm:flex-row justify-between bg-main shadow-[2px_8px_22px_2px_#6969844D] p-6 rounded-lg">
               {supportSvgData.map((item) => (
                 <div key={item.id}>
-                  <Support
-                    icon={item.icon}
-                    title={item.title}
-                    subTitle={item.subTitle}
-                  />
+                  <Support icon={item.icon} title={item.title} subTitle={""} />
                 </div>
               ))}
             </div>

@@ -11,7 +11,7 @@ const NewsContent = () => {
       id="newsContent"
       className="max-w-7xl mx-auto mt-10 flex flex-wrap justify-between gap-5"
     >
-      <div className="flex-1 w-[calc(66.%-1.25rem)] max-w-3xl">
+      <div className="flex-1 ">
         <FadeIn>
           <h3 className="text-primary font-semibold sm:text-4xl text-3xl leading-[160%] mb-5">
             267M Facebook Users Had Names, Phone Numbers Leaked On Dark Web
@@ -35,8 +35,10 @@ const NewsContent = () => {
                 Dark Web Discovery
               </h3>
             </FadeIn>
+
             <Button title="News" className="text-main bg-green rounded-md" />
           </div>
+
           <FadeIn>
             <p className="sm:text-2xl text-xl text-tertiary leading-[180%] my-2">
               In total,{" "}
@@ -44,19 +46,27 @@ const NewsContent = () => {
               found exposed.
             </p>
           </FadeIn>
-          <ul className="sm:text-2xl text-xl text-tertiary leading-[180%]">
-            <li>
-              {" "}
-              <FadeIn>Facebook user Ids</FadeIn>
-            </li>
 
+          <ul className="sm:text-2xl text-xl text-tertiary leading-[180%] list-disc pl-6">
             <li>
-              <FadeIn>Phone Number</FadeIn>
+              <FadeIn>Facebook User IDs</FadeIn>
             </li>
             <li>
-              <FadeIn>Full Name</FadeIn>
+              <FadeIn>Phone Numbers</FadeIn>
+            </li>
+            <li>
+              <FadeIn>Full Names</FadeIn>
             </li>
           </ul>
+
+          <FadeIn>
+            <p className="sm:text-2xl text-xl text-tertiary leading-[180%] my-2">
+              According to Diachenko, who examined the evidence, the data likely
+              came from “an illegal scraping operation or Facebook API abuse by
+              criminals in Vietnam.” Most of the stolen data belonged to users
+              in the United States.
+            </p>
+          </FadeIn>
         </div>
 
         <FadeIn>
@@ -70,15 +80,18 @@ const NewsContent = () => {
             </p>
           </div>
           <p className="sm:text-2xl text-xl text-tertiary leading-[180%] my-5">
-            Comparttech warned that "scraping" is a lechmrolatep widence:
-            process in automated bota quirkly init through. wore irunners of web
-            pages, rorgering from a database. They wten cannot tell the hdl
-            hfference between a legttimat user a legitimate user and more
-            thvrsets to Facebook users data.
+            Comparitech said that “‘scraping’ is a term used to describe a
+            process in which automated bots quickly sift through large numbers
+            of web pages, copying data from each one into a database. It’s
+            difficult for Facebook and other social media sites to prevent
+            scraping because they often cannot tell the difference between a
+            legitimate user and a bot. Scraping is against Facebook’s–and most
+            other social networks’–terms of service.”
           </p>
           <p className="sm:text-2xl text-xl text-tertiary leading-[180%]">
-            While the information stalen was minimal, it could poentslally spam
-            and phishing campaigns, such as compromised.
+            While the information stolen was minimal, it could still potentially
+            lead to large-scale SMS spam and phishing campaigns, among other
+            threats to Facebook users whose data was compromised.
           </p>
         </FadeIn>
 
@@ -87,9 +100,9 @@ const NewsContent = () => {
             Facebook’s Investigation
           </h3>
           <p className="sm:text-2xl text-xl text-tertiary leading-[180%] ">
-            While the information were taken, it may thelinpimite tracy plugie a
-            xcale SMS spam and phishing campaigns, such as targeting trmats to
-            Facebook agains data.
+            While the information was taken, it may help to limit tracking, plug
+            gaps, and scale SMS spam and phishing campaigns, such as targeting
+            threats to Facebook against data.
           </p>
         </FadeIn>
 
@@ -98,39 +111,10 @@ const NewsContent = () => {
             Precautionary Measures
           </h3>
           <p className="sm:text-2xl text-xl text-tertiary leading-[180%]">
-            The database nas since been taken offline. Users are advised to
+            The database has since been taken offline. Users are advised to
             secure their accounts and change passwords if they were affected by
             this breach.
           </p>
-        </FadeIn>
-      </div>
-      <div className="md:w-[calc(33.333%-1.25rem)] w-full">
-        <FadeIn>
-          {NewsCardData1.map((item) => (
-            <div key={item.title}>
-              <NewsCard
-                title={item.title}
-                lists={item.lists}
-                className="rounded-t-2xl"
-              />
-            </div>
-          ))}
-          <TipsComponent className="rounded-b-2xl" />
-        </FadeIn>
-
-        <FadeIn className="my-10">
-          {NewsCardData2.map((item) => (
-            <div key={item.title}>
-              <NewsCard
-                title={item.title}
-                subtitle={item.subtitle}
-                lists={item.lists}
-                className="rounded-2xl"
-              />
-            </div>
-          ))}
-
-          <TipsComponent className="rounded-2xl mt-10" />
         </FadeIn>
       </div>
     </section>

@@ -27,11 +27,11 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="py-6 w-full bg-transparent absolute top-0 left-0 z-50">
+      <header className="py-6 w-full bg-transparent absolute top-0 left-0 z-50 ">
         <div className="flex gap-4 items-center justify-between max-w-360 px-6 md:px-20 lg:px-25 mx-auto">
           {/* Logo */}
           <Link href="/" onClick={() => setMenuOpen(false)}>
-            <Image src={logo} alt="Net Interop Corp." className="w-18.5 h-11" />
+            <Image src={logo} alt="Net Interop Corp." className="w-24 h-16" />
           </Link>
 
           {/* Desktop Nav */}

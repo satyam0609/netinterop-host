@@ -15,7 +15,6 @@ const brands = [
   { src: "/brands/aws.png", alt: "AWS" },
   { src: "/brands/nextiva.png", alt: "Nextiva" },
   { src: "/brands/watchguard.png", alt: "WatchGuard" },
-  { src: "/brands/kerio.png", alt: "Kerio" },
   { src: "/brands/microsoft.png", alt: "Microsoft" },
   { src: "/brands/office365.png", alt: "Office 365" },
   { src: "/brands/aws.png", alt: "AWS" },

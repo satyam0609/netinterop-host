@@ -13,9 +13,7 @@ const SupportBanner = () => {
         "
             >
               Get Fast, Reliable IT <br className="hidden sm:block" />
-              Support When You
-              <br className="hidden sm:block" />
-              Need It Most
+              Support When You Need It Most
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>

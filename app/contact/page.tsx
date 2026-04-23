@@ -48,7 +48,7 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <section id="contactPage" className="mt-20 mb-40">
+    <section id="contactPage" className="mt-28 mb-40">
       <ContactBanner />
 
       <ContactInfo />

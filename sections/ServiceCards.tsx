@@ -42,7 +42,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           delay={0.1}
           distance={8}
         >
-          <p className="text-tertiary sm:text-2xl  text-lg  leading-[180%] max-w-121 my-4">
+          <p className="text-tertiary sm:text-2xl  text-lg  leading-[180%] max-w-200 my-4">
             {para}
           </p>
         </FadeIn>
@@ -82,7 +82,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 
           {(imageTitle || imagePara || imageButtonTitle) && (
             <div
-              className="image-content bg-[#00000040] sm:max-w-122 sm:p-6 p-4 md:py-10 absolute  sm:top-[10%] top-[20%] rounded-md
+              className="image-content bg-[#00000040] sm:max-w-122 sm:p-6 p-4 md:py-10 absolute  sm:top-[10%] top-[5%] rounded-md
 "
             >
               <h4 className="text-main font-semibold sm:text-4xl text-2xl leading-10">

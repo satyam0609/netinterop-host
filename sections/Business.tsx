@@ -64,12 +64,12 @@ export default function Business() {
               </h2>
 
               <p className="mt-5 md:mt-6 text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] leading-[170%] text-gray-600">
-                Net Interop Corp is a full-service IT consulting company based
-                in Northern Virginia. We offer specialized, highly customized
-                technology solutions for small to enterprise businesses. Using
-                powerful, state-of-the-art technology, our consultants will
-                design a solution for your business. Learn more about our
-                strategy now.
+                Net Interop Corp is a full-service IT consulting company with
+                offices in Northern Virginia and Northern Florida. We offer
+                specialized, highly customized technology solutions for small to
+                enterprise businesses. Using powerful, state-of-the-art
+                technology, our consultants will design a solution for your
+                business. Learn more about our strategy now.
               </p>
 
               <button className="mt-4 text-[16px] md:text-[18px] lg:text-[20px] underline text-[#037C3C] hover:text-green-700 transition">

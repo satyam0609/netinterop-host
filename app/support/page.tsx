@@ -64,7 +64,7 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <section id="supportPage" className="mt-20 bg-slate pb-40">
+    <section id="supportPage" className="mt-28 bg-slate pb-40">
       <SupportBanner />
 
       <main className="px-6 md:px-20 lg:px-25">

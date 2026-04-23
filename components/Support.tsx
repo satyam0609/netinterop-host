@@ -9,13 +9,13 @@ interface SupportProps {
 
 const Support: React.FC<SupportProps> = ({ icon, title, subTitle }) => {
   return (
-    <div className="flex items-start justify-between gap-2">
+    <div className="flex items-center justify-between gap-2">
       <Image
         src={icon}
         alt={title}
-        className="w-9 h-9 sm:w-13 sm:h-13object-cover"
+        className="w-9 h-9 sm:w-13 sm:h-13 object-cover"
       />
-      <div className="flex items-start flex-col justify-end mt-2">
+      <div className="flex items-start flex-col justify-end">
         <h3 className="text-primary font-semibold  sm:text-2xl text-xl">
           {title}
         </h3>
