@@ -61,11 +61,7 @@ const page = () => {
           >
             {supportSvgData.map((item) => (
               <div key={item.id}>
-                <Support
-                  icon={item.icon}
-                  title={item.title}
-                  // subTitle={item.subTitle}
-                />
+                <Support icon={item.icon} title={item.title} subTitle={""} />
               </div>
             ))}
           </section>
