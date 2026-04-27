@@ -52,7 +52,7 @@ export const aboutCardsSectionData = [
         Clients can focus on core<span className="text-green"> Business</span>
       </>
     ),
-    para: "Look to our experts for strategic IT guidance, management and support that allows you to take your mind off technology and concentrate on your core area of business. Net Interop Corp provides cost-efficient consulting services and solutions that simply make good sense.",
+    para: "Look to our experts for strategic IT guidance, management and support that allows you to take your mind off technology and concentrate on your core area of business. Net Interop Corp provides cost-efficient consulting services and solutions that simply make good sense.Get to know our people personally.",
     image: aboutImage3,
   },
 ];
@@ -85,64 +85,6 @@ export const supportSvgData = [
   },
 ];
 
-// export const serviceCardSectionData = [
-//   {
-//     id: 1,
-//     title: (
-//       <>
-//         Unified Business <br /> Communication
-//       </>
-//     ),
-//     para: (
-//       <>
-//         Streamline your business with{" "}
-//         <span className="text-green">our unified</span> communications
-//         solutions, making it easy to stay connected with your team and clients.
-//       </>
-//     ),
-//     lists: [
-//       "Auto Attendant",
-//       "Conference",
-//       "Call Forwarding",
-//       "Voice to Email",
-//       "Dynamic Voice Conferences",
-//     ],
-//     image: serviceImage1,
-//     src: "/public/Netinterop Assets/1x Images/service-section-call-center.png",
-//     imageTitle: "Advance Security Protection",
-//     imagePara: (
-//       <>
-//         Protect your business with our unified communication, <br /> asset
-//         tracking and automated security managment
-//       </>
-//     ),
-//     imageButtonTitle: "Get Protected",
-//   },
-//   {
-//     id: 2,
-//     title: (
-//       <>
-//         Professional Business <br /> Messaging
-//       </>
-//     ),
-//     para: (
-//       <>
-//         Elevate your team’s productivity with our business class messaging
-//         platform.
-//       </>
-//     ),
-//     lists: [
-//       "Instant Messaging",
-//       "Group Chat",
-//       "Shared Calendar",
-//       "Contact Management",
-//       "Malware Protection",
-//     ],
-//     image: serviceImage2,
-//     src: "/public/Netinterop Assets/2x Images/ChatGPT Image Mar 6, 2026, 10_42_25 PM 1.png",
-//   },
-// ];
-
 export const serviceCardSectionData = [
   {
     id: 1,
@@ -153,75 +95,51 @@ export const serviceCardSectionData = [
     ),
     para: (
       <>
-        Streamline your business with our unified communication solutions,
-        making it easy to stay connected with your team and clients.
+        Streamline your business with{" "}
+        <span className="text-green">our unified</span> communications
+        solutions, making it easy to stay connected with your team and clients.
       </>
     ),
     lists: [
       "Auto Attendant",
-      "Call Queues",
-      "Conference Calls",
-      "Ring Groups",
+      "Conference",
       "Call Forwarding",
-      "Call Pickup",
-      "Call Parking",
-      "Call Recording",
-      "Paging",
-      "Fax Support",
-      "Voicemail to Email",
+      "Voice to Email",
       "Dynamic Voice Conferences",
     ],
     image: serviceImage1,
     src: "/public/Netinterop Assets/1x Images/service-section-call-center.png",
-    imageTitle: "Total Communication",
+    imageTitle: "Advance Security Protection",
     imagePara: (
       <>
-        Our softphone app for Apple iOS and Android mobile devices lets users
-        take their office phone on-the-go.
-        <br />
-        <br />
-        Our PBX solution integrates with any SIP + VOIP provider. We regularly
-        work with Comcast, Verizon, Nexiva, Star2Star and nexVortex.
+        Protect your business with our unified communication, <br /> asset
+        tracking and automated security managment
       </>
     ),
-    imageButtonTitle: "Connect Today",
+    imageButtonTitle: "Get Protected",
   },
-
   {
     id: 2,
     title: (
       <>
-        Advanced Security <br /> Protection
+        Professional Business <br /> Messaging
       </>
     ),
     para: (
       <>
-        Protect your business with advanced security solutions that help manage,
-        monitor, and secure your complete IT infrastructure.
+        Elevate your team’s productivity with our business class messaging
+        platform.
       </>
     ),
     lists: [
-      "Managed Antivirus",
-      "Patch Management",
-      "Automated Monitoring",
-      "Alerting & Viewing",
-      "Remote Access & Management",
-      "Systems Reporting",
-      "Asset Tracking",
-      "Automated Maintenance",
-      "Manage Mobile Devices",
+      "Instant Messaging",
+      "Group Chat",
+      "Shared Calendar",
+      "Contact Management",
+      "Malware Protection",
     ],
     image: serviceImage2,
-    src: "/public/Netinterop Assets/2x Images/security-protection.png",
-    imageTitle: "Advanced Protection",
-    imagePara: (
-      <>
-        NICProtect helps your business focus on your business, not your IT
-        infrastructure. With NICProtect’s tools, Net Interop can centrally
-        manage your complete inventory of electronic assets.
-      </>
-    ),
-    imageButtonTitle: "Get Secured",
+    src: "/public/Netinterop Assets/2x Images/ChatGPT Image Mar 6, 2026, 10_42_25 PM 1.png",
   },
 ];
 
@@ -339,8 +257,8 @@ export const NewsCardData2 = [
 
 export const footerLinks = [
   { id: 1, title: "About", link: "/about" },
-  { id: 3, title: "Support", link: "/support" },
   { id: 2, title: "Services", link: "/services" },
+  { id: 3, title: "Support", link: "/support" },
   { id: 4, title: "News", link: "/news" },
   { id: 5, title: "Terms & Conditins", link: "/terms_and_conditins" },
   { id: 6, title: "Privacy Policy", link: "/privacy_policy" },

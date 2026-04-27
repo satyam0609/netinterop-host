@@ -1,8 +1,8 @@
 import { Button } from "@/components/Button";
 import { aboutCardsSectionData } from "@/constant/data";
-import AboutCards from "@/sections/AboutCards";
-import HeroAbout from "@/sections/HeroAbout";
-import Marquee from "@/sections/Marquee";
+import AboutCards from "@/components/sections/AboutCards";
+import HeroAbout from "@/components/sections/HeroAbout";
+import Marquee from "@/components/sections/Marquee";
 
 import type { Metadata } from "next";
 

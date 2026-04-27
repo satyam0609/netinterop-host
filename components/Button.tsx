@@ -7,10 +7,9 @@ interface NavigateButtonProps {
   link: string;
 }
 
-interface ButtonProps {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   title: string;
-  className: string;
-  icon?: any;
+  icon?: React.ReactNode;
 }
 
 const mainStyle = "py-1.5 px-6 rounded-full transition-all";
@@ -27,9 +26,23 @@ export const NavigateButton: React.FC<NavigateButtonProps> = ({
   );
 };
 
-export const Button: React.FC<ButtonProps> = ({ title, className, icon }) => {
+export const Button: React.FC<ButtonProps> = ({
+  title,
+  className,
+  icon,
+  disabled,
+  ...rest
+}) => {
   return (
-    <button className={`${className} ${mainStyle}`}>
+    <button
+      disabled={disabled}
+      className={`
+        ${mainStyle}
+        ${className ?? ""}
+        ${disabled ? "opacity-50 cursor-not-allowed" : "hover:opacity-90"}
+      `}
+      {...rest}
+    >
       {title} {icon}
     </button>
   );

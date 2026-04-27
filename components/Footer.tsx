@@ -1,15 +1,49 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "./Button";
 import Link from "next/link";
 import { footerLinks } from "@/constant/data";
 import { ChevronRight } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { FadeIn } from "./animation/fade-in";
+import toast from "react-hot-toast";
+import { sendEmailOnly } from "@/utils/email-service";
 
 const Footer = () => {
   const patname = usePathname();
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const validateEmail = (email: string) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+
+  const handleSend = async () => {
+    if (!email) {
+      return toast.error("Email is required");
+    }
+
+    if (!validateEmail(email)) {
+      return toast.error("Invalid email address");
+    }
+
+    try {
+      setLoading(true);
+
+      await sendEmailOnly({
+        email,
+        title: "",
+      });
+
+      toast.success("Email sent successfully!");
+      setEmail("");
+    } catch {
+      toast.error("Failed to send email");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <footer
@@ -33,12 +67,16 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full md:w-auto">
             <input
               type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter Your Email"
               className="px-6 py-4 rounded-sm bg-white text-primary placeholder:text-primary font-medium outline-none w-full sm:w-50 shadow-inner  text-start"
             />
             <Button
-              title="Send"
+              title={loading ? "Sending..." : "Send"}
               icon={<ChevronRight />}
+              onClick={handleSend}
+              disabled={loading}
               className="bg-secondary text-white px-8 py-4 rounded-sm font-semibold hover:bg-opacity-90 transition-all w-full sm:w-auto flex items-center justify-center gap-3"
             />
           </div>

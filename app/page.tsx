@@ -1,7 +1,7 @@
-import Business from "@/sections/Business";
-import Everyone from "@/sections/Everyone";
-import Hero from "@/sections/Hero";
-import Marquee from "@/sections/Marquee";
+import Business from "@/components/sections/Business";
+import Everyone from "@/components/sections/Everyone";
+import Hero from "@/components/sections/Hero";
+import Marquee from "@/components/sections/Marquee";
 
 export const metadata = {
   title: "NetInterop Corp | IT Solutions, Team Scaling & Workflow Optimization",

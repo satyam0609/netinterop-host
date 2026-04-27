@@ -19,7 +19,7 @@ const Support: React.FC<SupportProps> = ({ icon, title, subTitle }) => {
         <h3 className="text-primary font-semibold  sm:text-2xl text-xl">
           {title}
         </h3>
-        <p className="text-tertiary font-normal sm:text-xl">{subTitle}</p>
+        {/* <p className="text-tertiary font-normal sm:text-xl">{subTitle}</p> */}
       </div>
     </div>
   );

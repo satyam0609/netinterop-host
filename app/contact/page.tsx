@@ -1,8 +1,8 @@
 import { FadeIn } from "@/components/animation/fade-in";
 import Support from "@/components/Support";
 import { supportSvgData } from "@/constant/data";
-import ContactBanner from "@/sections/ContactBanner";
-import ContactInfo from "@/sections/ContactInfo";
+import ContactBanner from "@/components/sections/ContactBanner";
+import ContactInfo from "@/components/sections/ContactInfo";
 
 import type { Metadata } from "next";
 
@@ -64,7 +64,7 @@ const page = () => {
                 <Support
                   icon={item.icon}
                   title={item.title}
-                  subTitle={item.subTitle}
+                  // subTitle={item.subTitle}
                 />
               </div>
             ))}

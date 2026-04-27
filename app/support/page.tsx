@@ -6,8 +6,8 @@ import {
   supportContactData,
   supportSpecialData,
 } from "@/constant/data";
-import SupportBanner from "@/sections/SupportBanner";
-import SupportSvgs from "@/sections/SupportSvgs";
+import SupportBanner from "@/components/sections/SupportBanner";
+import SupportSvgs from "@/components/sections/SupportSvgs";
 
 import type { Metadata } from "next";
 

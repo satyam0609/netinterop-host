@@ -1,5 +1,5 @@
-import NewsContent from "@/sections/NewsContent";
-import NewsBanner from "@/sections/NewsBanner";
+import NewsContent from "@/components/sections/NewsContent";
+import NewsBanner from "@/components/sections/NewsBanner";
 import { Metadata } from "next";
 
 export const metadata = {

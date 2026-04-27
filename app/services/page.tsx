@@ -5,9 +5,9 @@ import {
   serviceSvgs,
   supportSvgData,
 } from "@/constant/data";
-import ServiceBanner from "@/sections/ServiceBanner";
-import ServiceCard from "@/sections/ServiceCards";
-import ServiceSvgs from "@/sections/ServiceSvgs";
+import ServiceBanner from "@/components/sections/ServiceBanner";
+import ServiceCard from "@/components/sections/ServiceCards";
+import ServiceSvgs from "@/components/sections/ServiceSvgs";
 
 import type { Metadata } from "next";
 

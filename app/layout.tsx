@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Poppins, Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Toaster } from "react-hot-toast";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -94,6 +95,7 @@ export default function RootLayout({
       <body className={`w-full ${poppins.variable}`}>
         <Navbar />
         {children}
+        <Toaster position="top-right" reverseOrder={false} />
         <Footer />
       </body>
     </html>
